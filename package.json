@@ -1,10 +1,16 @@
 {
   "name": "say-hello",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "mrdth",
+    "email": "mrdth@zeventien.org",
+    "url": "https://github.com/mrdth"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "bundle": "vue-cli-service build --target lib --name sayHello ./src/components/SayHello.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,13 +32,12 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
   },
   "browserslist": [
     "> 1%",
