@@ -1,16 +1,19 @@
 {
-  "name": "say-hello",
+  "name": "isc-say-hello",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://github.com/mrdth/say-hello",
   "author": {
     "name": "mrdth",
     "email": "mrdth@zeventien.org",
     "url": "https://github.com/mrdth"
   },
+  "files": [  "dist/*",  "src/*",  "public/*",  "*.json",  "*.js"],
+  "main": "dist/say-hello.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "bundle": "vue-cli-service build --target lib --name sayHello ./src/components/SayHello.vue",
+    "bundle": "vue-cli-service build --target lib --name say-hello ./src/components/SayHello.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

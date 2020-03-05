@@ -4,8 +4,8 @@ A literal Hello, World component - provides a button which generates an alert gr
 ## To Use
 Add the component to your project using npm or yarn
 ```
-npm -i mrdth/say-hello
-yarn add mrdth/say-hello
+npm i isc-say-hello
+yarn add isc-say-hello
 ```
 
 You can then register the component in your code
@@ -13,7 +13,7 @@ You can then register the component in your code
 ### ES6
 ```js
 
-import SayHello from 'say-hello'
+import SayHello from 'isc-say-hello'
 
 export default {
   ...
